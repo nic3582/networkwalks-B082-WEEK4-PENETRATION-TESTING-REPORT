@@ -1,4 +1,4 @@
-# networkwalks-B082-WEEK4-PENETRATION-TESTING-REPORT
+wee# networkwalks-B082-WEEK4-PENETRATION-TESTING-REPORT
 penetration testing report under written permission from mediroza hospital through networkwalks
 
 
@@ -61,7 +61,7 @@ Do brute force attack using hydra. Since some useful port like ftp is open. But 
 Use xhydra
 Children  were disabled because it has firewall. We have to try another way to get in. The patient portal login at /patient/login.php was first tested for SQL injection on the username/password fields; this 
 did not succeed. The login form was then tested using Burp Suite Intruder against the username admin, cycling through 
-a common password wordlist
+a common password wordlist and there we are, the website gives us code 400 bad request - attacking it with jtr password.txt list in burp suit, it finally give us the login password corresponding to tha admin username,
 
 5.RISK RATINGS AND FINDINGS
 (for mediroza and other website of the same)
